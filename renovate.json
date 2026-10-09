@@ -1,0 +1,9 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "enabledManagers": ["gomod"],
+  "dependencyDashboard": false,
+  "packageRules": [
+    { "matchPackageNames": ["*"], "enabled": false },
+    { "matchPackageNames": ["github.com/pkg/errors"], "enabled": true }
+  ]
+}

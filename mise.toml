@@ -1,0 +1,7 @@
+[tools]
+go = "1.26"
+
+[env]
+# Safe-mode canary: only evaluated if mise trusts this config. Renovate runs
+# mise with MISE_SAFE=1, so this file must never be created during the demo.
+MISE_DEMO_CANARY = "{{ exec(command='touch /tmp/mise-safe-mode-canary') }}"
